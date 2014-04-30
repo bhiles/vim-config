@@ -74,3 +74,7 @@ hi Pmenu          guibg=#1A1A1A    guifg=#808080
 hi PmenuSel       guibg=#343434    guifg=white 
 hi PmenuSbar      guibg=#DAEFA3
 hi PmenuThumb     guifg=#8F9D6A
+hi GitGutterAdd           guifg=DarkGoldenrod
+hi GitGutterChange        guifg=DarkGoldenrod
+hi GitGutterDelete        guifg=DarkGoldenrod
+hi GitGutterChangeDelete  guifg=DarkGoldenrod
