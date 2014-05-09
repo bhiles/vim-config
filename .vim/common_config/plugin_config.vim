@@ -104,24 +104,6 @@
     nmap gl :cwindow<CR>
 
 
-" Tagbar for navigation by tags using CTags
-  Bundle "git://github.com/majutsushi/tagbar.git"
-    let g:tagbar_autofocus = 1
-    map <Leader>rt :!ctags --extra=+f -R *<CR><CR>
-    map <Leader>. :TagbarToggle<CR>
-
-
-" Ruby focused unit test (wrapped in an if-loaded because it doesn't like
-" being loaded twice)
-  if !exists(':RunRubyFocusedUnitTest')
-    Bundle "git://github.com/drewolson/ruby_focused_unit_test_vim.git"
-      nmap <Leader>ra :wa<CR> :RunAllRubyTests<CR>
-      nmap <Leader>rc :wa<CR> :RunRubyFocusedContext<CR>
-      nmap <Leader>rf :wa<CR> :RunRubyFocusedUnitTest<CR>
-      nmap <Leader>rl :wa<CR> :RunLastRubyTest<CR>
-  endif
-
-
 " Markdown syntax highlighting
   Bundle "git://github.com/tpope/vim-markdown.git"
     augroup mkd
@@ -226,6 +208,7 @@
     let g:surround_45 = "<% \r %>"
     " = to surround with output erb tag
     let g:surround_61 = "<%= \r %>"
+
 
 " Clojure Highlighting"
   Bundle "https://github.com/vim-scripts/VimClojure.git"
