@@ -8,9 +8,6 @@
   set background=dark
   color twilight2
 
-" don't wrap long lines
-  set nowrap
-
 " show commands as we type them
   set showcmd
 
